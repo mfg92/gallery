@@ -30,6 +30,8 @@ excerpt: Looking at the food habits and nutriotion status of school going childr
 
 # The Dataset
 
+{{< gallery match="images/*" sortOrder="desc" rowHeight="150" margins="5" resizeOptions="600x300 q90 Lanczos" showExif="true" previewType="blur" embedPreview="true" >}}
+
 This dataset[^1] contains data on nutrition status and food habits collected from 1265 students in rural and urban, private and government schools in Dehradun, Uttarakhand. The questionnaire used to collect the data covered an extensive range of questions, including the participant's family type (nuclear, joint), their daily caloric intake (classified by breakfast, lunch and dinner), their physical activity, food habits, occupation of their parents, height, and weight. 
 
 
