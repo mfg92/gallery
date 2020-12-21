@@ -1,0 +1,12 @@
+theme: "hugo-theme-novela"
+baseURL: "https://example.com"
+languageCode: "en-us"
+title: "Aman Bhargava"
+pygmentsstyle: 'monokai'
+paginate: 6
+social:
+  twitter: "https://twitter.com/thedivtagguy"
+  github: "https://github.com/thedivtagguy"
+  instagram: "https://instagram.com/thedivtagguy"
+taxonomies:
+  author: authors

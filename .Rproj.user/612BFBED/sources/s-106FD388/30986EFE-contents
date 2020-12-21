@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+{{ partial "articles/hero.html" . }}
+{{ partial "articles/articles.html" . }}
+
+
+{{ end }}

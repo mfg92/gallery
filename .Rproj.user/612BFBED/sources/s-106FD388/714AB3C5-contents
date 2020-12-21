@@ -1,0 +1,6 @@
+{{ define "main" }}
+
+{{ partial "articles/articles.html" . }}
+
+
+{{ end }}
