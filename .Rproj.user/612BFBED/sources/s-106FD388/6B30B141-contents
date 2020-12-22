@@ -1,3 +1,0 @@
-{{ range first 1 site.RegularPages "Type" "post"  }}
-    {{ .Render "summary" }}
-{{ end }}

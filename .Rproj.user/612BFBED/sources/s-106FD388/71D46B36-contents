@@ -1,3 +1,0 @@
-options(spacy_condaenv = "spacy_condaenv")
-options(blogdown.ext = '.Rmd', blogdown.author = 'Aman Bhargava')
-

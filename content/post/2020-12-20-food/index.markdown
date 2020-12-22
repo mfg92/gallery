@@ -10,7 +10,7 @@ hero: /images/hero-3.jpg
 excerpt: Looking at the food habits and nutriotion status of school going children in R.
 ---
 <script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-
+<script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/jquery-1.12.4/jquery.min.js"></script>
 <link href="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
 <script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/datatables-binding-0.16/datatables.js"></script>
 <link href="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -19,6 +19,7 @@ excerpt: Looking at the food habits and nutriotion status of school going childr
 <link href="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
 <script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
 <script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/jquery-1.12.4/jquery.min.js"></script>
 <link href="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
 <script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/datatables-binding-0.16/datatables.js"></script>
 <link href="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -28,8 +29,6 @@ excerpt: Looking at the food habits and nutriotion status of school going childr
 <script src="{{< relref "post/2020-12-20-food/index.markdown" >}}index_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
 
 # The Dataset
-
-{{< gallery match="images/*" sortOrder="desc" rowHeight="150" margins="5" resizeOptions="600x300 q90 Lanczos" showExif="true" previewType="blur" embedPreview="true" loadJQuery="True">}}
 
 This dataset[^1] contains data on nutrition status and food habits collected from 1265 students in rural and urban, private and government schools in Dehradun, Uttarakhand. The questionnaire used to collect the data covered an extensive range of questions, including the participant's family type (nuclear, joint), their daily caloric intake (classified by breakfast, lunch and dinner), their physical activity, food habits, occupation of their parents, height, and weight. 
 
@@ -54,7 +53,7 @@ data$group_code <- gsub("RP", "Rural Private", data$group_code)
 data$group_code <- gsub("UP", "Urban Private", data$group_code)
 ```
 
-{{< gallery match="images/*" sortOrder="desc" rowHeight="150" margins="5" resizeOptions="600x300 q90 Lanczos" showExif="true" previewType="blur" embedPreview="true" >}}
+{{< gallery match="images/*" sortOrder="desc" rowHeight="150" margins="5" resizeOptions="600x300 q90 Lanczos" showExif="true" previewType="blur" embedPreview="true" loadJQuery="True">}}
 
 Let's expand the table to see what is inside.
 
