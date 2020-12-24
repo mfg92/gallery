@@ -4,23 +4,13 @@
 
     <div class="heading-container" style="max-width: {{ .Page.Params.hero.maxWidthPX }}px;">
         <h1 class="hero-heading">{{ .Page.Params.hero.heading }}</h1> <br> <br>
-       
+        <div class ="bio">
         {{ partial "bio.html" . }}
-         <div class="subheading-container"> <br><br><br>
-        <div class="grid-controls-container">
-            <button id="btnGrid" class="grid-button">
-                {{ partial "icons/ui/tiles.html" . }}
-            </button>
-            <button id="btnRows" class="grid-button">
-                {{ partial "icons/ui/rows.html" . }}
-            </button>
         </div>
     </div>
     </div>
-    </div>
       <div class="right-half">
-<h1 class="hero-heading">
-    
+
 
 {{ range first 1 (where site.RegularPages "Type" "post") }}
 <a href="{{ .RelPermalink }}" class="article-link" class="article-hero">

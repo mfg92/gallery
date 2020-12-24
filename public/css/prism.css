@@ -324,3 +324,23 @@ div.code-toolbar > .toolbar span:focus {
  .article-link{max-width:100%!important;}
 
  .article-link{max-width:40%;margin:15px}
+
+
+/* Cards CSS */
+.hero-heading { 
+  font-family:"brandon-grotesque";
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.article-title{ 
+  font-family:"brandon-grotesque";
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+/* Card */
+

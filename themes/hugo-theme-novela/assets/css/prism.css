@@ -229,13 +229,15 @@ div.code-toolbar > .toolbar span:focus {
 	text-decoration: none;
 }
 
-/* Pattern styles */
+/* Hero styles */
 .container {
   display: flex;
-   flex-flow: row wrap;
+  flex-flow: row wrap;
+    align-content: center;
+
 }
 
-  .left-half {
+.left-half {
   flex-basis: 50%;
 }
 
@@ -247,16 +249,19 @@ div.code-toolbar > .toolbar span:focus {
 
 @media (max-width: 540px){
   .left-half {
-  flex-basis: 100%;
-  margin-top: -80px;
-  padding: 20px;
-  
+     flex-basis: 100%;
+     margin-top: -80px;
+
   }
 
+  .bio-text {
+    margin-left: -20px;
+    
+  }
+  
 .right-half {
   flex-basis: 100%;
    margin-top: -80px;
-  padding: 20px;
 }
 }
 
@@ -267,6 +272,14 @@ div.code-toolbar > .toolbar span:focus {
   color: #a3a3a3;
 }
 @media (max-width: 540px){
+  .hero-heading{
+padding-left:4rem;
+}
+  
+  .bio{
+    padding-left:10px;
+  }
+  
 .hero-excerpt { 
   font-size: 18px;
   font-weight: 100;
@@ -283,6 +296,8 @@ div.code-toolbar > .toolbar span:focus {
   padding-top: 20px;
 }
 }
+
+/* Menu Items */
 
 .nav-menu {
   padding:20px;
@@ -324,3 +339,71 @@ div.code-toolbar > .toolbar span:focus {
  .article-link{max-width:100%!important;}
 
  .article-link{max-width:40%;margin:15px}
+
+
+/* Hero Fonts CSS */
+
+.hero-heading { 
+  font-family:"brandon-grotesque";
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.article-title{ 
+  font-family:"brandon-grotesque";
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+/* sections css */
+
+.flex-container{
+display: flex;
+flex-flow: row wrap;
+padding-left: 100px;
+padding-right: 100px;
+
+}
+
+.photography { 
+ background: none !important;
+  background: no-repeat url("https://thedivtagguy.com/wp-content/uploads/2020/11/InstagramSize.jpg") !important; 
+  min-height: 200px;
+  flex-basis: 50%;
+
+}
+
+.photography h1 {
+  color:white;
+
+}
+
+.art { 
+ 
+  background:blue;
+  min-height: 200px;
+  flex-basis: 50%;
+}
+
+@media (max-width: 540px){
+  .art {
+  flex-basis: 100%;
+  margin-top: -80px;
+  padding: 20px;
+  }
+  
+  .photography {
+    flex-basis: 100%;
+               }
+               
+  .flex-container{
+display: flex;
+flex-flow: row wrap;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+  }
