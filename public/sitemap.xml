@@ -65,4 +65,8 @@
     <loc>https://example.com/blog/</loc>
   </url>
   
+  <url>
+    <loc>https://example.com/photography/</loc>
+  </url>
+  
 </urlset>

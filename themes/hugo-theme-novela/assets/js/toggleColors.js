@@ -81,6 +81,7 @@ function makeDark(){
     bodyElement.style.setProperty('--horizontalRule', "rgba(255, 255, 255, 0.15)");
     bodyElement.style.setProperty('--inputBackground', "rgba(255, 255, 255, 0.07)");
     bodyElement.style.setProperty('--tooltip', "#000");
+    
 }
 
 function makeLight(){

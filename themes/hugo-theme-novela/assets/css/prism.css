@@ -1,5 +1,5 @@
-/* PrismJS 1.21.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+git+go+json+json5+jsx+tsx+toml+typescript+yaml&plugins=line-numbers+toolbar+copy-to-clipboard */
+/* PrismJS 1.22.0
+https://prismjs.com/download#themes=prism-tomorrow&languages=markup+css+clike+javascript+python+r+yaml&plugins=line-highlight+line-numbers+highlight-keywords+normalize-whitespace+toolbar+copy-to-clipboard */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -123,6 +123,66 @@ pre[class*="language-"] {
 	color: green;
 }
 
+pre[data-line] {
+	position: relative;
+	padding: 1em 0 1em 3em;
+}
+
+.line-highlight {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: inherit 0;
+	margin-top: 1em; /* Same as .prism’s padding-top */
+
+	background: hsla(24, 20%, 50%,.08);
+	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+
+	pointer-events: none;
+
+	line-height: inherit;
+	white-space: pre;
+}
+
+	.line-highlight:before,
+	.line-highlight[data-end]:after {
+		content: attr(data-start);
+		position: absolute;
+		top: .4em;
+		left: .6em;
+		min-width: 1em;
+		padding: 0 .5em;
+		background-color: hsla(24, 20%, 50%,.4);
+		color: hsl(24, 20%, 95%);
+		font: bold 65%/1.5 sans-serif;
+		text-align: center;
+		vertical-align: .3em;
+		border-radius: 999px;
+		text-shadow: none;
+		box-shadow: 0 1px white;
+	}
+
+	.line-highlight[data-end]:after {
+		content: attr(data-end);
+		top: auto;
+		bottom: .4em;
+	}
+
+.line-numbers .line-highlight:before,
+.line-numbers .line-highlight:after {
+	content: none;
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows {
+	pointer-events: all;
+}
+pre[id].linkable-line-numbers span.line-numbers-rows > span:before {
+	cursor: pointer;
+}
+pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
+	background-color: rgba(128, 128, 128, .2);
+}
+
 pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
@@ -228,12 +288,11 @@ div.code-toolbar > .toolbar span:focus {
 	color: inherit;
 	text-decoration: none;
 }
-
 /* Hero styles */
 .container {
   display: flex;
   flex-flow: row wrap;
-    align-content: center;
+  align-content: center;
 
 }
 
@@ -360,50 +419,70 @@ padding-left:4rem;
 
 /* sections css */
 
-.flex-container{
-display: flex;
-flex-flow: row wrap;
-padding-left: 100px;
-padding-right: 100px;
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right:20px;
 
 }
-
-.photography { 
- background: none !important;
-  background: no-repeat url("https://thedivtagguy.com/wp-content/uploads/2020/11/InstagramSize.jpg") !important; 
-  min-height: 200px;
-  flex-basis: 50%;
-
-}
-
-.photography h1 {
-  color:white;
-
-}
-
-.art { 
- 
-  background:blue;
-  min-height: 200px;
-  flex-basis: 50%;
-}
-
-@media (max-width: 540px){
-  .art {
-  flex-basis: 100%;
-  margin-top: -80px;
-  padding: 20px;
-  }
+.column2 {
+  float: right;
+  width: 50%;
+  padding-right: 150px;
   
-  .photography {
-    flex-basis: 100%;
-               }
-               
-  .flex-container{
-display: flex;
-flex-flow: row wrap;
-padding-left: 20px;
-padding-right: 20px;
-
 }
-  }
+
+.column3 {
+  width: 100%;
+  padding-right: 150px;
+  padding-left: 150px;
+  
+}
+.flex-container:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+.flex-container {
+  margin-top:-30px;
+  
+} 
+
+.section-title {
+  font-family:"brandon-grotesque";
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 735px){
+blockquote {
+    margin: 5px auto 3px;
+    /* padding: 0 180px; */
+}
+
+blockquote > p {
+  font-size: 20px;
+}
+}
+
+
+blockquote > p {
+  font-size: 25px;
+  padding: 0 180px;
+}
+
+.token.function { ... }
+.token.variable { ... }
+.token.namespace { ... }
+
+
+

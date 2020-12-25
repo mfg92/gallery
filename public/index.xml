@@ -85,5 +85,15 @@ Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit 
 Nulla vitae elit libero, a pharetra augue.</description>
     </item>
     
+    <item>
+      <title>Photography</title>
+      <link>https://example.com/photography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/photography/</guid>
+      <description>Hello This is a page
+.jg-entry img {transition: transform .25s ease-in-out !important;}.jg-entry img:hover {transform: scale(1.1);}194mm f/5.6 1/500sec ISO 100&#34;mm f/ sec ISO &#34;22mm f/4.5 1/4000sec ISO 400&#34;mm f/ sec ISO &#34;50mm f/3.</description>
+    </item>
+    
   </channel>
 </rss>

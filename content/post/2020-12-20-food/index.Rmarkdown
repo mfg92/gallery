@@ -1,6 +1,7 @@
 ---
-title: Food
-author: Aman Bhargava
+title: Foooood
+authors:
+- Hugo Authors
 date: '2020-12-20'
 slug: []
 categories: []

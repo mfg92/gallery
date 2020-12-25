@@ -1,16 +1,61 @@
 {{ define "main" }}
-
 {{ partial "articles/hero.html" . }}
-
 {{ .Content }}
-
-<div class="flex-container">   
-  <div class="photography">
-     <h1>Photography</h1>
-  </div>
-  <div class="art">
-  <h1>3D Art</h1>
+<div class="flex-container">
+	<div class="column">
+		<a href="/photography" class="article-link" class="article-hero">
+			<div class="article-data-outer">
+				<div class="image-container"> <img src="https://thedivtagguy.com/wp-content/uploads/2020/12/photography.png" class="article-image" /> </div>
+				<div class="article-data">
+					<h3 class="section-title">
+               
+                  Photography 
+            </h3>
+  
+   </div>
+   </div>
+    </a>
+   </div>
+   
+   
+   <div class="column2">
+      
+   <a href="#" class="article-link" class="article-hero">
+      <div class="article-data-outer">
+         <div class="image-container">
+            <img src="https://thedivtagguy.com/wp-content/uploads/2020/12/3D.png" class="article-image" />
+         </div>
+         <div class="article-data">
+            <h3 class="section-title">
+                  3D Art 
+            </h3>
+   
+   </div>
+   </div>
+   </a>
+   
+   
 </div>
+
+
+
 </div>
 
+<div class="column3">
+      
+   <a href="#" class="article-link" class="article-hero">
+      <div class="article-data-outer">
+         <div class="image-container">
+            <img src="https://thedivtagguy.com/wp-content/uploads/2020/12/Explainer00625.png" class="article-image" />
+         </div>
+         <div class="article-data">
+            <h3 class="section-title">
+                  Coding 
+            </h3>
+   
+   </div>
+   </div>
+   </a>
+   
+</div>
 {{ end }}

@@ -229,13 +229,15 @@ div.code-toolbar > .toolbar span:focus {
 	text-decoration: none;
 }
 
-/* Pattern styles */
+/* Hero styles */
 .container {
   display: flex;
-   flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-content: center;
+
 }
 
-  .left-half {
+.left-half {
   flex-basis: 50%;
 }
 
@@ -247,16 +249,19 @@ div.code-toolbar > .toolbar span:focus {
 
 @media (max-width: 540px){
   .left-half {
-  flex-basis: 100%;
-  margin-top: -80px;
-  padding: 20px;
-  
+     flex-basis: 100%;
+     margin-top: -80px;
+
   }
 
+  .bio-text {
+    margin-left: -20px;
+    
+  }
+  
 .right-half {
   flex-basis: 100%;
    margin-top: -80px;
-  padding: 20px;
 }
 }
 
@@ -267,6 +272,14 @@ div.code-toolbar > .toolbar span:focus {
   color: #a3a3a3;
 }
 @media (max-width: 540px){
+  .hero-heading{
+padding-left:4rem;
+}
+  
+  .bio{
+    padding-left:10px;
+  }
+  
 .hero-excerpt { 
   font-size: 18px;
   font-weight: 100;
@@ -283,6 +296,8 @@ div.code-toolbar > .toolbar span:focus {
   padding-top: 20px;
 }
 }
+
+/* Menu Items */
 
 .nav-menu {
   padding:20px;
@@ -326,7 +341,8 @@ div.code-toolbar > .toolbar span:focus {
  .article-link{max-width:40%;margin:15px}
 
 
-/* Cards CSS */
+/* Hero Fonts CSS */
+
 .hero-heading { 
   font-family:"brandon-grotesque";
   font-weight: 900;
@@ -342,5 +358,48 @@ div.code-toolbar > .toolbar span:focus {
 }
 
 
-/* Card */
+/* sections css */
 
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right:20px;
+
+}
+.column2 {
+  float: right;
+  width: 50%;
+  padding-right: 150px;
+  
+}
+
+.column3 {
+  width: 100%;
+  padding-right: 150px;
+  padding-left: 150px;
+  
+}
+.flex-container:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+.flex-container {
+  margin-top:-30px;
+  
+} 
+
+.section-title {
+  font-family:"brandon-grotesque";
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  color: #f2f2f2;
+}

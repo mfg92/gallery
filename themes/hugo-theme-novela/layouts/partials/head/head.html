@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/images/favicon.svg">
     {{ $style := resources.Get "scss/global.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{ $prism := resources.Get "css/prism.css" }}
     <link rel="stylesheet" href="{{ $prism.RelPermalink }}" />
@@ -12,4 +14,6 @@
     {{ with .Params.forestry_instant_preview_id }}
       {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
     {{ end -}}
+ 
+<script src="prism.r.js" type="text/javascript"></script>
 </head>
